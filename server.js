@@ -15,10 +15,10 @@ app.use(helmet());
 app.use(helmet.noCache());
 var img = mysql.createConnection({
 	host: "127.0.0.1",
-	user: "nane008",
-	password: "03102000pxpdupla",
+	user: "user",
+	password: "pass",
 	database: "pxp",
-	port: 4288
+	port: 3306
 });
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
