@@ -1,0 +1,54 @@
+<html>
+	<head>
+	<link rel="icon" href="favicon.ico">
+	<title>PxP</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="game.css">
+    </head>
+    <body>
+		<div id="left-col">
+			<div class="option" onclick="window.open('index.html','_self')" style="width:323.8px;"><img src="colours/block_logo.png" style="width:inherit"></div>
+			<div id="points"></div>
+			<div style="width:161.9px;display:inline-block;vertical-align:top;"><img style="width:inherit" src="colours/purple,5.png"></div>
+			<div style="width:161.9px;display:inline-block;vertical-align:top;">
+				<div style="width:161.9px;height:80.95px;display:table-cell;border:0;">
+					<div style="width:80.95px;height:80.95px;" class="option" id="people"><img style="width:inherit" src="colours/block_people.png"></div>
+					<div style="width:80.95px;height:80.95px;" class="option" id="user"><img style="width:inherit" src="colours/block_prof.png"></div>
+				</div>
+				<div style="width:161.9px;height:80.95px;display:table-cell;border:0;">
+					<div style="width:80.95px;height:80.95px;" class="option" id="help"><img style="width:inherit" src="colours/block_quest.png"></div>
+					<div style="width:80.95px;height:80.95px;" class="option" id="leaderbord"><img style="width:inherit" src="colours/block_med.png"></div>
+				</div>
+			</div>
+		</div>
+		<div id="canvas-container" style="position:absolute;left:323.8px;top:0px;">
+			<canvas id="canvas-id" ></canvas>
+		</div>
+    	<div id="right-col">
+    		<div style="width:inherit;">
+    			<div style="width:50%;float:left" id="heightSample"><img style="width:100%" src="colours/dark,5.png"></div>
+    			<div id="colorbox"></div>
+    		</div>
+    		<div style="width:inherit;">
+    			<div style="width:50%;float:left" class="option" onclick="nextImage()"><img style="width:100%" src="colours/block_arr.png"></div>
+    			<div style="width:50%;display: inline-block;"><img style="width:100%" src="colours/sky,5.png"></div>
+    		</div>
+    		<div id="words-container">
+    			<form id="word-form" action="#" onkeypress="return event.keyCode != 13?0:sendKeyword(document.getElementById('word').value);">
+  					<div class="form-group">
+	    				<label for="user"><font color="white">Keyword:</font></label>
+	    				<input type="text" class="form-control" autocomplete="off" required="true" id="word" placeholder="Enter your keyword here">
+	    			</div>
+	    			<div class="form-group" align="right">
+		  				<input type="submit" style="display:none" id="login-btn" value="Submit">
+	  				</div>
+	  			</form>
+	  			<div id="previouswords">
+	  				
+	  			</div>
+    		</div>
+    	</div>
+    </body>
+	<script src = "jquery.min.js"></script>
+	<script src = "game.js"></script>
+</html>

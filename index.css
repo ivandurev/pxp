@@ -1,0 +1,113 @@
+		[class*="col-"]{
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.row
+		{
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		.option{
+			-webkit-transition: all .1s ease; /* Safari and Chrome */
+		    -moz-transition: all .1s ease; /* Firefox */
+		    -ms-transition: all .1s ease; /* IE 9 */
+		    -o-transition: all .1s ease; /* Opera */
+		    transition: all .1s ease;
+		}
+		.option:hover{
+			z-index: 98;
+			box-shadow: 0px 0px 18px black;
+			-webkit-transform:scale(1.02); /* Safari and Chrome */
+		    -moz-transform:scale(1.02); /* Firefox */
+		    -ms-transform:scale(1.02); /* IE 9 */
+		    -o-transform:scale(1.02); /* Opera */
+			transform: scale(1.02);
+		}
+		.option.selected {
+			-webkit-transition: all 1s ease; /* Safari and Chrome */
+		    -moz-transition: all 1s ease; /* Firefox */
+		    -ms-transition: all 1s ease; /* IE 9 */
+		    -o-transition: all 1s ease; /* Opera */
+		    transition: all 1s ease;
+		    -moz-transform: scale(3);
+		    -webkit-transform: scale(3);
+		    -o-transform: scale(3);
+		    -ms-transform: scale(3);
+		    transform: scale(3);
+		}
+		#popup
+		{
+			display:none;
+			z-index: 100;
+			position:absolute;
+			box-shadow: 0px 0px 18px black;
+			top:50%;
+			left:50%;
+			width:500px;
+			height:500px;
+			margin-left:-250px;
+			margin-top:-250px;
+			background-color: #c8c8fe;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px; /* future proofing */
+		}
+		#block
+		{
+			display:none;
+			z-index:99;
+			position:fixed;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background-image: url('colours/pix.png');
+			background-size: 100%;
+			background-repeat: no-repeat;
+		}
+		.popup-container
+		{
+			padding-left: 100px;
+			padding-right: 100px;
+			padding-top: 100px;
+			padding-bottom: 15px;
+			width: 100%;
+		}
+		#nameleader
+		{
+			background-color: #ffffff;
+			width: 65%;
+			display:inline-block;
+			padding-right: 15px;
+			height: 30px;
+			float: left;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px; /* future proofing */
+			vertical-align: middle;
+			line-height: 30px;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-bottom: 10px;
+		}
+		#pointleader
+		{
+			background-color: #809ffe;
+			width:33%;
+			height: 30px;
+			display: inline-block;
+			float:right;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px; /* future proofing */
+			vertical-align: middle;
+			line-height: 30px;
+			text-align: right;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-bottom: 10px;
+		}
+		body
+		{
+			overflow:hidden;
+		}

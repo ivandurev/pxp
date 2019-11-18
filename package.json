@@ -1,0 +1,19 @@
+{
+  "name": "pxp",
+  "version": "1.2.0",
+  "description": "Guess what a blurry pixel spot means",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Durev & Plamen Ivanov",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "helmet": "^3.9.0",
+    "https": "^1.0.0",
+    "mysql": "^2.13.0"
+  }
+}

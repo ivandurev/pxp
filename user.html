@@ -1,0 +1,53 @@
+<div class="container popup-container" id="userinfo" style="display:none;margin-top:-30px;">
+	<h1 style="font-size:500%" id="username-popup"></h1>
+	<p id="points-popup"></p>
+</div>
+<div class="container popup-container" id="signin" style="display: none;">
+	<h1 style="color:#12127d">Log in</h1>
+	<form action="#" id="loginform" onkeypress="return event.keyCode != 13?0:login(document.getElementById('user-log').value,document.getElementById('pass-log').value);">
+  		<div class="form-group">
+	    	<label for="user">Username:</label>
+	    	<input type="text" class="form-control" required="true" id="user-log" style="width:300px;" placeholder="Enter your username here">
+	  	</div>
+	  	<div class="form-group">
+	    	<label for="pass">Password:</label>
+	    	<input type="password" class="form-control" required="true" id="pass-log" style="width:300px;" placeholder="Enter your password here">
+	  	</div>
+	  	<div style="width:100%" class="row">
+		  	<div class="col-sm-6 form-group" style="display:inline;">
+		  		<a href="#" onclick="$('#signin').fadeOut('fast', function(){$('#signup').fadeIn();});">Sign up</a>
+		  	</div>
+		  	<div class="col-sm-6 form-group" style="display:inline;" align="right">
+		  		<input type="submit" class="btn btn-default" id="login-btn" value="Submit">
+		  	</div>
+		 </div>
+		 <p style="color:#ff0000;display:none;text-align: center;padding-top: 20px;" id="wrong">Invalid username or password!</p>
+	</form>
+</div>
+<div class="container popup-container" id="signup" style="display:none;margin-top:-30px;">
+	<h1 style="color:#12127d">Sign up</h1>
+	<form action="#" id="signupform" onkeypress="return event.keyCode != 13?0:validate(document.getElementById('user-sign').value,document.getElementById('pass-sign').value,document.getElementById('pass2-sign').value);">
+  		<div class="form-group">
+	    	<label for="user">Username:</label>
+	    	<input type="text" class="form-control" required="true" id="user-sign" style="width:300px;" placeholder="Enter your username here">
+	  	</div>
+	  	<div class="form-group">
+	    	<label for="pass">Password:</label>
+	    	<input type="password" class="form-control" required="true" id="pass-sign" style="width:300px;" placeholder="Enter your password here">
+	  	</div>
+	  	<div class="form-group">
+	    	<label for="pass">Repeat Password:</label>
+	    	<input type="password" class="form-control" required="true" id="pass2-sign" style="width:300px;" placeholder="Enter your password again here">
+	  	</div>
+	  	<div style="width:100%" class="row">
+		  	<div class="col-sm-6 form-group" style="display:inline;">
+		  		<a href="#" onclick="$('#signup').fadeOut('fast', function(){$('#signin').fadeIn();});">Sign in</a>
+		  	</div>
+		  	<div class="col-sm-6 form-group" style="display:inline;" align="right">
+		  		<input type="submit" class="btn btn-default" id="signup-btn" value="Submit">
+		  	</div>
+		 </div>
+		 <p style="color:#ff0000;display:none;text-align: center;padding-top: 20px;" id="wrong2">Passwords don't match!</p>
+		 <p style="color:#ff0000;display:none;text-align: center;padding-top: 20px;" id="wrong3">Invalid username or password!</p>
+	</form>
+</div>
