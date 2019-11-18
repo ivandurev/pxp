@@ -15,3 +15,7 @@ If you want to add new pictures run:
 node convserv.js
 ```
 and open `converter.html`. Use the function `convert(imageURL)` to get the tree to be imported in the database.
+
+## Information
+
+The game runs an HTTPS server so a certificate must be provided.
